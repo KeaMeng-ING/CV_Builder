@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+}
+
+p,
+h4 {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.user-input {
+  width: 50%;
+  height: 100vh; /* remove it after finished */
+  background-color: #ffffff;
+  box-sizing: border-box;
+  overflow-y: auto; /* In case content is taller than viewport */
+  padding: 0 3% 3% 3%;
+}
+
+.output {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  max-width: 50%;
+  background-color: #575875;
+  overflow-y: auto; /* In case content is taller than viewport */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.auto-fill,
+.clear-button {
+  width: 100px;
+  background-color: #577eff;
+  color: #fff;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.1s ease-in-out;
+}
+
+.clear-button {
+  background-color: #ff00003d;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-input-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.half-container {
+  width: 50%;
+}
+
+input {
+  height: 37px;
+  background-color: #4048721f;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 10px;
+  font-family: "Nunito";
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+}
+
+label {
+  opacity: 0.5;
+  font-family: "Nunito";
+}
+
+.personal,
+.education,
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.cv-paper {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.cv-header {
+  background-color: #0e374e;
+  color: white;
+  padding: 36px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.cv-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 13px;
+}
+
+.fullNameOutput h1 {
+  margin: 0;
+}
+
+.addressInfo {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.iconAddress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.iconAddress p {
+  margin: 0;
+}
+
+.output-education,
+.output-experience {
+  width: 100%;
+}
+
+.resume-section {
+  margin-top: 40px;
+  padding: 0 56px;
+}
+
+.output-header {
+  font-family: "Nunito";
+  display: flex;
+  justify-content: center;
+  background-color: #f1f0f0;
+  padding: 4px 0;
+  border-radius: 2px;
+  color: 0374ee;
+  margin-bottom: 13px;
+}
+
+.education-container {
+  display: flex;
+  gap: 20px;
+}
+
+.education-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.output-entry-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.output-entry {
+  margin: 0 0 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.education-date,
+.experience-date {
+  width: 140px;
+}
+
+.addEducation,
+.addExperience {
+  background-color: #577eff;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: auto;
+  display: block;
+}
+
+.addEducation:hover,
+.addExperience:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.experience-degree {
+  width: 70%;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+textarea {
+  height: 100px;
+  background-color: #4048721f;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 10px;
+  font-family: "Nunito";
+}
+
+.input-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+h3 {
+  margin: 0;
+}
